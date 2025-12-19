@@ -33,7 +33,7 @@ jobs:
         run: |
           python preprocessing/automate_Ibnu_Dwito_Abimanyu.py spam_email_dataset_raw.csv --output_csv preprocessing/spam_email_dataset_cleaned.csv
       - name: Upload cleaned dataset artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: cleaned-dataset
           path: preprocessing/spam_email_dataset_cleaned.csv
